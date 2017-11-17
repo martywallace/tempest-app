@@ -1,0 +1,14 @@
+{
+	"name": "ascensionwd/tempest-app",
+	"version": "0.1.0",
+	"description": "Boilerplate for developing a PHP application with Tempest.",
+	"license": "MIT",
+	"autoload": {
+		"psr-4": {
+			"": "app/src/"
+		}
+	},
+	"require": {
+		"ascensionwd/tempest": "dev-master"
+	}
+}
