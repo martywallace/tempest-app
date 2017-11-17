@@ -5,9 +5,9 @@
 	"license": "MIT",
 	"scripts": {
 		"post-create-project-cmd": [
-			"@php -r \"file_put_contents('.env', 'DEV=true')\"",
-			"@php -r \"unlink('LICENSE.md')\"",
-			"@php -r \"unlink('README.md')\""
+			"@php -r \"file_put_contents('.env', 'DEV=true');\"",
+			"@php -r \"unlink('LICENSE.md');\"",
+			"@php -r \"unlink('README.md');\""
 		]
 	},
 	"autoload": {
@@ -15,7 +15,15 @@
 			"": "app/src/"
 		}
 	},
+	"autoload-dev": {
+		"psr-4": {
+			"Tests\\": "tests/"
+		}
+	},
 	"require": {
 		"ascensionwd/tempest": "dev-master"
+	},
+	"require-dev": {
+		"phpunit/phpunit": "^6.4"
 	}
 }
