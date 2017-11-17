@@ -8,6 +8,12 @@
 			"@php -r \"file_put_contents('.env', 'DEV=true');\"",
 			"@php -r \"unlink('LICENSE.md');\"",
 			"@php -r \"unlink('README.md');\""
+		],
+		"test": [
+			"vendor/bin/phpunit"
+		],
+		"dev": [
+			"@php -S localhost:3000 -t public"
 		]
 	},
 	"autoload": {

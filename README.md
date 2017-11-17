@@ -10,10 +10,17 @@ To use it, simply run Composer's `create-project` command:
 
 This will create a new Tempest application in a new folder `my-app`.
 
+## Quick Development
+
+To quickly launch the application on `localhost:3000` without first having to
+configure a new virtual host, you can use:
+
+    $ composer run-script dev
+
 ## Unit Testing
 
 Unit testing is built into the template with PHPUnit. You can write tests within
 `tests`, whose contained classes should sit in the `Tests` namespace. To run
 the tests, simply:
 
-    $ vendor/bin/phpunit
+    $ composer run-script test
