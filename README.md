@@ -5,4 +5,4 @@ This project serves as a boilerplate for PHP applications built with
 
 To use it, simply run Composer's `create-project` command:
 
-$ composer create-project ascensionwd/tempest-app
+    $ composer create-project ascensionwd/tempest-app
