@@ -1,14 +1,8 @@
 <?php
 
-require('../vendor/autoload.php');
+use Tempest\Http\Http;
+use Tempest\Http\Request;
 
-/**
- * @return App
- */
-function app() {
-	return App::get();
-}
+$boot = require('../app/boot.php');
 
-App::boot(realpath(__DIR__ . '/../'), 'app/config.php')
-	->http(Tempest\Http\Request::capture(), 'app/kernels/http.php')
-	->send();
+$boot(Http::class, Request::capture(), 'app/config/http.php');
