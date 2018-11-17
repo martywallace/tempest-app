@@ -1,12 +1,12 @@
 # Tempest App
 
 This project serves as a boilerplate for PHP applications built with
-[Tempest](https://github.com/ascensionwd/tempest) by providing a project
+[Tempest](https://github.com/martywallace/tempest) by providing a project
 structure that best fits the way Tempest is intended to be used.
 
 To use it, simply run Composer's `create-project` command:
 
-    $ composer create-project ascensionwd/tempest-app my-app
+    $ composer create-project martywallace/tempest-app my-app
 
 This will create a new Tempest application in a new folder `my-app`.
 
